@@ -1,10 +1,13 @@
 
 
+    import React from 'react';
+    import MovieCard from '../moviecard/MovieCard';
+
     const MovieList = ({ movies }) => {
     return (
     <div className="movie-list">
-        {movies.map((Movie) => (
-        <MovieList key={Movie.id} {...Movie} />
+        {movies && movies.map((movie) => (
+        <MovieCard key={movie.id} {...movie} />
         ))}
     </div>
     );

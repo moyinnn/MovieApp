@@ -1,13 +1,16 @@
 
 
-const MovieCard = ({ movie }) => {
+    import React from "react";
+
+    const MovieCard = ( props ) => {
     return (
-        <div>
-        <img src={movie?.posterURL} style={{width:'350px'}} alt={movie?.title} />
-        <h3>{movie?.title}</h3>
-        <p>{movie?.description}</p>
-        <p>Rating: {movie?.rating}</p>
-        </div>
+    <div>
+        <img src={props?.posterURL} style={{width:'350px'}} alt={props?.title} />
+        <h3>{props?.title}</h3>
+        <p>{props?.description}</p>
+        <p>Rating: {props?.rating}</p>
+    </div>
     );
     };
     export default MovieCard;
+    
